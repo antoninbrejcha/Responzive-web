@@ -178,11 +178,23 @@ h2 {
     width: 31%;
     height: auto;
     aspect-ratio: 352/280;
+    min-width: 150px;
+    min-height: 120px;
   }
   .images{
-    justify-content: space-between;
+    max-width: 74%;
   }
 }
+
+@media (width >= 768px){
+  .container{
+    max-width: 768px;
+  }
+  .images{
+    max-width: 74% !important;
+  }
+}
+
 @media (width >= 1120px) {
   .container {
     max-width: 1120px;
@@ -191,6 +203,7 @@ h2 {
     padding-top: 4.8rem;
     padding-left: 0px;
     padding-right: 0px;
+    justify-content: space-between;
   }
   h2 {
     font-size: 2.25rem;
